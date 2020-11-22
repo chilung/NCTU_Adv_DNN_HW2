@@ -24,7 +24,9 @@ Follow original Yolo v4 [github](https://github.com/AlexeyAB/darknet.git) README
 <object-class> <x_center> <y_center> <width> <height>
 Where:
 <object-class> - integer object number from 0 to (classes-1)
-<x_center> <y_center> <width> <height> - float values relative to width and height of image, it can be equal from (0.0 to 1.0]. For example: <x> = <absolute_x> / <image_width> or <height> = <absolute_height> / <image_height>. attention: <x_center> <y_center> - are center of rectangle (are not top-left corner).
+<x_center> <y_center> <width> <height> - float values relative to width and height of image, it can be equal from (0.0 to 1.0].
+For example: <x> = <absolute_x> / <image_width> or <height> = <absolute_height> / <image_height>.
+attention: <x_center> <y_center> - are center of rectangle (are not top-left corner).
 </code></pre>
   
   
