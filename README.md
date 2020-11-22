@@ -31,13 +31,13 @@ attention: "x_center" "y_center" - are center of rectangle (are not top-left cor
 ### train the model from Yolov4 pretrained model
 <pre><code>./darknet detector train ./build/darknet/x64/data/obj.data ./cfg/yolo-obj.cfg ./build/darknet/x64/yolov4.conv.137 -map
 </code></pre>
-resume train
-./darknet detector train ./build/darknet/x64/data/obj.data ./cfg/yolo-obj.cfg ./build/darknet/x64/backup/yolo-obj_xxxx.weights -map
-
-train with remote server without GUI
-./darknet detector train ./build/darknet/x64/data/obj.data ./cfg/yolo-obj.cfg ./build/darknet/x64/yolov4.conv.137 -dont_show -mjpeg_port 8090 -map
+### resume train
+<pre><code>./darknet detector train ./build/darknet/x64/data/obj.data ./cfg/yolo-obj.cfg ./build/darknet/x64/backup/yolo-obj_xxxx.weights -map
+</code></pre>
+### train with remote server without GUI
+<pre><code>./darknet detector train ./build/darknet/x64/data/obj.data ./cfg/yolo-obj.cfg ./build/darknet/x64/yolov4.conv.137 -dont_show -mjpeg_port 8090 -map
+</code></pre>
 then open URL http://ip-address:8090 
-
-train with multiple GPU
-./darknet detector train ./build/darknet/x64/data/obj.data ./cfg/yolo-obj-200000.cfg ./build/darknet/x64//backup/yolo-obj-200000_1000.weights -gpus 0,1 -dont_show -mjpeg_port 8090 -map
-
+### train with multiple GPU
+<pre><code>./darknet detector train ./build/darknet/x64/data/obj.data ./cfg/yolo-obj.cfg ./build/darknet/x64/yolov4.conv.137 -gpus 0,1 -dont_show -mjpeg_port 8090 -map
+</code></pre>
