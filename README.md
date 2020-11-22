@@ -20,17 +20,12 @@ Follow original Yolo v4 [github](https://github.com/AlexeyAB/darknet.git) README
 1. Download the Yolo v4 pretrained model from [Yolov4.conv.137](https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.conv.137) and put into the directory of ./build/darknet/x64/
 2. Download the train dataset from [here](https://drive.google.com/file/d/1UheRzvFHMCC2vWt5f9PTHMniRP6K_uug/view?usp=sharing). Unzip into the directory of ./build/darknet/x64/data/obj
 3. open the notebook of hw_work/h5-2-label_file.ipynb to process the h5 label and come out the label file for Yolo v4 format, e.g 1.txt for 1.png. Put these label txt file in the same directory as train dataset.
-
-for each object in new line:
-
+<pre><code>for each object in new line:
 <object-class> <x_center> <y_center> <width> <height>
-
 Where:
-
 <object-class> - integer object number from 0 to (classes-1)
-
 <x_center> <y_center> <width> <height> - float values relative to width and height of image, it can be equal from (0.0 to 1.0]. For example: <x> = <absolute_x> / <image_width> or <height> = <absolute_height> / <image_height>. attention: <x_center> <y_center> - are center of rectangle (are not top-left corner).
-  
+</code></pre>
   
   
   
