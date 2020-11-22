@@ -1,5 +1,5 @@
 ## Compile the darknet executable
-Follow original Yolo v4 [github](https://github.com/AlexeyAB/darknet.git) README.md to make ./darknet
+Follow original Yolo v4 [github](https://github.com/AlexeyAB/darknet.git) README.Yolov4.md to make ./darknet
 ## test
 1. Download the pretrained darknet weights. You can use this pretrained weights [here](https://drive.google.com/file/d/1lDDQ_JJmW0hv4SNGkcT1yiWcPxf459Us/view?usp=sharing)
 2. Put the pretrained weights into the directory of ./build/darknet/x64/backup/
